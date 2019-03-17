@@ -6,5 +6,8 @@ get'/' do
 
 erb :user_input
 
+post '/piglatinize' do
+  params #{"name"}
+end 
 
 end
