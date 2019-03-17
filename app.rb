@@ -7,7 +7,9 @@ get'/' do
 erb :user_input
 
 post '/piglatinize' do
-  params #{"name"}
+  @text = params[:user_phrase]
+  @piglatinizer = PigLatinizer.new
+  erb :piglatinize
 end
 
 end
